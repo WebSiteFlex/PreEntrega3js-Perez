@@ -124,27 +124,27 @@ activateClickInButtons();
 
 //cart
 
-function displayCartProducts() {
-  const list = document.getElementById("listProducts");
+// function displayCartProducts() {
+//   const list = document.getElementById("listProducts");
 
-  if (!list) {
-    console.error("Error: Element with ID 'listProducts' not found");
-    return;
-  }
+//   if (!list) {
+//     console.error("Error: Element with ID 'listProducts' not found");
+//     return;
+//   }
 
-  list.innerHTML = "";
-  cart.forEach((product) => {
-    const priceWithIva = product.price * Iva;
-    const productContainer = document.createElement("div");
-    productContainer.classList.add("cart-product");
-    productContainer.innerHTML = `
-      <p class="product-name">${product.nameP}</p>
-      <p class="product-price">Price: $${priceWithIva .toFixed(2)}</p>
-    `;
+//   list.innerHTML = "";
+//   cart.forEach((product) => {
+//     const priceWithIva = product.price * Iva;
+//     const productContainer = document.createElement("div");
+//     productContainer.classList.add("cart-product");
+//     productContainer.innerHTML = `
+//       <p class="product-name">${product.nameP}</p>
+//       <p class="product-price">Price: $${priceWithIva .toFixed(2)}</p>
+//     `;
 
-    list.appendChild(productContainer);
-  });
-}
-document.addEventListener("DOMContentLoaded", function () {
-  displayCartProducts();
-});
+//     list.appendChild(productContainer);
+//   });
+// }
+// document.addEventListener("DOMContentLoaded", function () {
+//   displayCartProducts();
+// });
