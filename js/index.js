@@ -109,14 +109,15 @@ function showLetter() {
   let value1 = localStorage.getItem("myCart");
   console.table(value1.toString());
 }
+
 showLetter();
 
 
-  let tConvert = JSON.parse(localStorage.getItem("myCart"));
+ let tConvert = JSON.parse(localStorage.getItem("myCart"));
 
 
 function calculateTotalPrice() {
-  if (cart.length === 0) {
+  if (tConvert.length === undefined) {
     console.log("the cart is empty.");
     return;
   } else {
@@ -125,7 +126,7 @@ function calculateTotalPrice() {
       return total + priceWithIva;
     }, 0);
 
-    console.table("Precio total del carrito: $" + totalPrice.toFixed(2));
+    console.table("Precio total del carrito: $" + totalPrice);
   }
 }
 
