@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Online Store test">
+    <meta name="keywords" content="OnlineStore, Shop">
+    <!-- aot css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- milligram css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <!-- script external  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- my css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../icon/shopping-store.png">
+    <!-- my script -->
+    <script src="js/index.js"></script>
+    <title>finalize Purchase|Online Store</title>
+</head>
+
+<body class="gridPurchase">
+    <header class="header">
+        <section class="section1H">
+            <span class="OnlineStore">
+                <a href="../index.html" class="titleNav">
+                    Online Store
+                </a>
+            </span>
+        </section>
+        <nav class="sectionH2">
+            <ul>
+                <li><a href="../index.html" class="linksNav">Store</a></li>
+                <li><a href="cart.html" class="linksNav">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="ticketDiscount">
+        <p>¿Have you got any ticket? you have click here by introduce your code</p>
+    </section>
+
+    <section class="fatherContainerDetails">
+
+        <div class="containerDetails">
+
+            <section class="details">
+                <h1>
+                    billing details
+                </h1>
+                <section>
+                    <div class="containerForm">
+                        <form action="#">
+                            <span>*</span>
+                            <label for="name">name:<input type="text" name="name" id="name" placeholder="Write your name"
+                                    required></label><span>*</span>
+                            <label for="surname">surname: <input type="text" name="surname"
+                                    placeholder="Write your surname"></label><span>*</span>
+                            <label for="email">email:<input type="email" name="email"
+                                    placeholder="Write your email, example: dominio@gmail.com"
+                                    required></label><span>*</span>
+                            <label for="tel">phone:<input type="tel" name="tel"
+                                    placeholder="write your phone, example: +56 1123456345"
+                                    required></label>
+                            <span>
+                                <p>Confirm finalize Purchase?</p>
+                            </span>
+                            <label for="checkbox">yes<input type="checkbox" name="checkbox"
+                                    ></label>
+                            <label for="checkbox">no<input type="checkbox" name="checkbox"
+                                    ></label>
+                        </form>
+                    </div>
+                 
+            </section>
+            <hr class="lineStyle">
+                <main class="mainFinalizeCart">
+                    <h2>your order</h2>
+
+                    <div class="detailesYourOrder">
+                        <p>here it´s of details</p>
+                    </div>
+
+                    <div>
+                        <span>
+                            <p>direct bank transfer</p>
+                        </span>
+                        <form action="#">
+                            <input type="checkbox" value="yes" name="checkbox">
+                        </form>
+                    </div>
+                </main>
+                <div class="containerFinalizeOrder">
+                    <button id="buttonFinalizeShop">Finalize order</button>
+                </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <span id="copyright">
+            @Online Store by <span id="externalWEBSite">Wix</span>
+        </span>
+
+        <ul class="lisNavF">
+            <li><a href="#" class="linksFooter">Store</a></li>
+            <li><a href="#" class="linksFooter">Cart</a></li>
+            <li><a href="#" class="linksFooter">Finalize purchase</a></li>
+            
+        </ul>
+    </footer>
+</body>
+
+</html>

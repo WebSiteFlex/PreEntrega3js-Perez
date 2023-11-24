@@ -1,0 +1,86 @@
+.ticketDiscount {
+    width: 97%;
+    height: 50px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 40px;
+    background-color: rgb(31, 31, 31);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 0 10px 9px whitesmoke;
+    }
+
+    p {
+        color: white;
+        text-transform: capitalize;
+        text-align: left;
+        font-size: 18px;
+    }
+}
+
+.fatherContainerDetails {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    .containerDetails {
+        width: 90%;
+        padding: 20px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        section {
+            width: 500px;
+
+            h1 {
+                color: black;
+                font-family: 'Oswald', sans-serif;
+                text-transform: uppercase;
+            }
+
+            form {
+                width: 100%;
+                height: auto;
+                label {
+                    display: inline;
+                    text-transform: capitalize;
+                    margin-right: 10px;
+                }
+            }
+        }
+        hr{
+            width: 100%;
+            padding: 1px;
+            background-color: rgb(116, 116, 116);
+        }
+        main{
+            width: 500px;
+
+            h2{
+                color: black;
+                font-family: 'Oswald', sans-serif;
+                text-transform: uppercase;
+            }
+        }
+        .containerFinalizeOrder{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            
+            button{
+                all: unset;
+                @include buttonStyleFoo;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
