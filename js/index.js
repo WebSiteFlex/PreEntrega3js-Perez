@@ -105,6 +105,29 @@ function readCards() {
 
 readCards();
 
+function showLetter() {
+  let value1 = localStorage.getItem("myCart");
+  console.table(value1.toString());
+}
+showLetter();
+
+
+  let tConvert = JSON.parse(localStorage.getItem("myCart"));
+
+
+function calculateTotalPrice() {
+  if (cart.length === 0) {
+    console.log("the cart is empty.");
+    return;
+  } else {
+    const totalPrice = tConvert.reduce((total, product) => {
+      const priceWithIva = product.price * Iva;
+      return total + priceWithIva;
+    }, 0);
+
+    console.table("Precio total del carrito: $" + totalPrice.toFixed(2));
+  }
+}
 
 //adding products in cart
 
